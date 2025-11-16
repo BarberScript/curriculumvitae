@@ -1,2 +1,2 @@
-# curriculumvitae
-London App Brewery
+# capstone
+capstone project
