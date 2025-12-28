@@ -1,0 +1,11 @@
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
+.carousel-item img {
+  height: 650px;
+  object-fit: cover;
+  width: 100%;
+}
