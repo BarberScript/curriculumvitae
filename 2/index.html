@@ -4,29 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Project</title>
-    <link rel="stylesheet" href="../css/capstone_2/styles.css">
+    <title>BarberScript</title>
+    <link rel="icon" href="./assets/barber.png" alt="icon created by Freepik - Flaticon" />
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <div><img class="header-logo" src="assets/barber.png"></div>
+            <ul class="nav-links">
+                <li><a href='../index.html'>Portfolio</a></li>
+                <li><a href="https://github.com/BarberScript">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div class="top-container">
-            <img class="top-cloud" src="../assets/cloud.png" />
-
-            <div class="text">
-                <h1>I'm BarberScript.</h1>
-                <h2>a barber/programmer.</h2>
+        <section class="main">
+            <div class="maindiv">
+                <div class="maintext">
+                    <h1>BarberScript</h1>
+                    <p>Trust me I'm barber.</p>
+                    <!--<button class="mainbutton">GitHub</button>-->
+                    <a class="mainbutton" href="https://github.com/BarberScript">GitHub</a>
+                </div>
+                <div class="mainimg">
+                    <img class="trustimg" src="./assets/IMG_8872.png">
+                </div>
             </div>
-            <img class="bottom-cloud" src="../assets/cloud.png" />
-            <img class="mountain" src="../assets/mountain.png" />
-        </div>
-        <div class="middle-container">
-            <img class="photo" src="../assets/IMG_8872.png">
-            <h2>Hello.</h2>
-            <p>I'm fulltime barber, i would like to become web-programmer.</p>
-        </div>
-        <div class="bottom-container"></div>
+        </section><!--main-->
+
+        <section class="knowledge" id="knowledge">
+            <h2>Knowledges</h2>
+            <div class="cards">
+                <div class="card">
+                    <img class="card-img" src="./assets/html5.png">
+                    <p>HTML</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/css3.png">
+                    <p>CSS</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/js.png">
+                    <p>JavaScript</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/react.svg">
+                    <p>React</p>
+                </div>
+            </div>
+        </section><!--knowledge-->
+        <hr>
+        <section class="hobby">
+            <h2>Hobbies</h2>
+            <div class="cards">
+                <div class="card">
+                    <img class="card-img" src="./assets/tea.png">
+                    <p>Tea</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/espresso.png">
+                    <p>Espresso</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/switch.png">
+                    <p>Nintendo Switch</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/bee.png">
+                    <p>Programming</p>
+                </div>
+            </div>
+        </section><!--hobby-->
+
+        <section class="quote">
+            <p class="quote-text">"Barbering is the art of creating without an eraser."</p>
+            <span class="quote-author">God of Hair</span>
+        </section><!--quote-->
+
+        <section class="call-to-action">
+            <div class="cta-container">
+                <div class="cta-text">
+                    <h3>Get In Touch</h3>
+                    <p>If you love programming and hair as much as I do.</p>
+                </div>
+                <a class="cta-button" href="mailto:">CONTACT ME</a>
+            </div>
+        </section><!--call-to-action-->
     </main>
+    <footer>
+        <p class="copyright"><a href="https://github.com/BarberScript" class="footera">BarberScript</a></p>
+    </footer>
 </body>
 
 </html>

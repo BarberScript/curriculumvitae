@@ -1,0 +1,61 @@
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
+.carousel-item img {
+  height: 650px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.feature-icon img,
+.feature-icon svg {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-icon:hover img,
+.feature-icon:hover svg {
+  transform: scale(1.1) rotate(5deg); /* Немного увеличится и повернется */
+  color: #0d6efd; /* Цвет изменится на фирменный синий Bootstrap */
+}
+
+.navbar .nav-link {
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  position: relative;
+  isolation: isolate; /* важно! */
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 0 1px rgba(13, 110, 253, 0.25), 0 4px 10px rgba(13, 110, 253, 0.18);
+}
+
+.carousel-fade-edges {
+  position: relative;
+  overflow: hidden; /* Обрезает выходящие за пределы градиенты */
+}
+
+.carousel-fade-edges::before,
+.carousel-fade-edges::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1rem; /* Ширина зоны выцветания — можно изменить на 10–25% */
+  height: 100%;
+  pointer-events: none; /* Не мешает кликам по стрелкам и слайдам */
+  z-index: 2;
+}
+
+.carousel-fade-edges::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.carousel-fade-edges::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
